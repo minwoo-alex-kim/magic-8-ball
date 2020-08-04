@@ -1,3 +1,4 @@
+import random
 print('Hello!')
 print('...')
 print('My namne is Omni. I have been designed to tell you your fortune.')
@@ -5,31 +6,45 @@ print('...')
 print('Please be respectful when asking me questions.')
 print('...')
 pass #break for visibility
-try:
-    omni = str(input('What would you like to know about your fortune?\n'))
-    for i in range(1000):
-        random.choice(i)
-    if i >= 1 and i <= 20:
-        print('As I see it, yes.')
-    elif i > 20 and i <= 40:
-        print('Ask again later.')
-    elif i > 40 and i <= 60:
-        print('Better not tell you now.')
-    elif i > 60 and i <= 80:
-        print('Cannot predict now.')
-    elif i > 80 and i <= 100:
-        print('Concentrate and ask again.')
-    elif i > 100 and i <= 120:
-        print('Do not count on it.')
-    elif i > 120 and i <= 140:
-        print('It is certain.')
-    elif i > 140 and i <= 160:
-        print('It is decidedly so')
-    elif i > 160 and i <= 180:
-        print('Most likely.')
-    elif i > 180 and i <= 200:
-        print('My reply is no.')
-    else:
-        print('test')
-except:
-    print('test 2')
+omni = str(input('What would you like to know about your fortune?\n'))
+om_en = random.randint(1, 400)
+if om_en >= 1 and om_en <= 20:
+    print('As I see it, yes.')
+elif om_en > 20 and om_en <= 40:
+    print('Ask again later.')
+elif om_en > 40 and om_en <= 60:
+    print('Better not tell you now.')
+elif om_en > 60 and om_en <= 80:
+    print('Cannot predict now.')
+elif om_en > 80 and om_en <= 100:
+    print('Concentrate and ask again.')
+elif om_en > 100 and om_en <= 120:
+    print('Do not count on it.')
+elif om_en > 120 and om_en <= 140:
+    print('It is certain.')
+elif om_en > 140 and om_en <= 160:
+    print('It is decidedly so')
+elif om_en > 160 and om_en <= 180:
+    print('Most likely.')
+elif om_en > 180 and om_en <= 200:
+    print('My reply is no.')
+elif om_en > 200 and om_en <=220:
+    print('My sources say no.')
+elif om_en > 220 and om_en <= 240:
+    print('Outlook not so good.')
+elif om_en > 240 and om_en <= 260:
+    print('Outlook good.')
+elif om_en > 260 and om_en <= 280:
+    print('Reply hazy, try again.')
+elif om_en > 280 and om_en <= 300:
+    print('Signs point to yes.')
+elif om_en > 300 and om_en <= 320:
+    print('Very doubtful.')
+elif om_en > 320 and om_en <= 340:
+    print('Without a doubt.')
+elif om_en > 340 and om_en <= 360:
+    print('Yes.')
+elif om_en > 360 and om_en <= 380:
+    print('Yes - definitely.')
+elif om_en > 380 and om_en <= 400:
+    print('You may rely on it.')
