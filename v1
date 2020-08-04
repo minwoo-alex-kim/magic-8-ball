@@ -1,0 +1,35 @@
+print('Hello!')
+print('...')
+print('My namne is Omni. I have been designed to tell you your fortune.')
+print('...')
+print('Please be respectful when asking me questions.')
+print('...')
+pass #break for visibility
+try:
+    omni = str(input('What would you like to know about your fortune?\n'))
+    for i in range(1000):
+        random.choice(i)
+    if i >= 1 and i <= 20:
+        print('As I see it, yes.')
+    elif i > 20 and i <= 40:
+        print('Ask again later.')
+    elif i > 40 and i <= 60:
+        print('Better not tell you now.')
+    elif i > 60 and i <= 80:
+        print('Cannot predict now.')
+    elif i > 80 and i <= 100:
+        print('Concentrate and ask again.')
+    elif i > 100 and i <= 120:
+        print('Do not count on it.')
+    elif i > 120 and i <= 140:
+        print('It is certain.')
+    elif i > 140 and i <= 160:
+        print('It is decidedly so')
+    elif i > 160 and i <= 180:
+        print('Most likely.')
+    elif i > 180 and i <= 200:
+        print('My reply is no.')
+    else:
+        print('test')
+except:
+    print('test 2')
